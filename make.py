@@ -40,10 +40,6 @@ ipynb_files = [ x for x in all_ipynb_files if ".ipynb_checkpoints" not in x ]
 
 # In[3]:
 
-
-ipynb_files.remove('./make.ipynb')
-
-
 # ## Convert All Jupyter Notebooks To Markdown
 
 # In[4]:

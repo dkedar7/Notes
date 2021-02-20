@@ -114,8 +114,6 @@ all_md_files = [os.path.join(root, name)
                for name in files
                if name.endswith((".md"))]
 
-all_md_files.remove('./README.md')
-
 for file in all_md_files:
     with open(file,'r') as f:
         filedata = f.read()

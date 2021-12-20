@@ -1,2 +1,3 @@
 .DS_Store/*
 .ipynb_checkpoints/PandasPivotTable-checkpoint.ipynb
+.ipynb_checkpoints*

@@ -1,11 +1,18 @@
 ---
-title: "Add Padding Around String"
+title: "Interactive Pivot Table in Jupyter Notebook"
 author: "Kedar"
-date: 2017-12-20T11:53:49-07:00
+date: 2021-05-03
 description: "Add Padding Around String Using Python."
 type: technical_note
 draft: false
 ---
+### Interactive Pivot Table in Jupyter Notebook
+
+
+```python
+!pip install pivottablejs
+```
+
 
 ```python
 import pandas as pd
@@ -263,42 +270,4 @@ df.describe()
 pivot_ui(df)
 ```
 
-
-
-
-
-<iframe
-    width="100%"
-    height="500"
-    src="pivottablejs.html"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-
-
-
-
-
-```python
-pivot_ui(df)
-```
-
-
-
-
-
-<iframe
-    width="100%"
-    height="500"
-    src="pivottablejs.html"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-
-
-
-
-
-```python
-
-```
+<img src="https://github.com/dkedar7/Notes/blob/master/assets/pivottablejs.png?raw=true"/>

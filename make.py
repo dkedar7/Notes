@@ -47,7 +47,7 @@ for folder_name in folders:
                 return thestring[:-len(ending)]
             return thestring
 
-        new_folder_name = rchop(folder_name, '_files')
+        new_folder_name = rchop(folder_name, '_files').lower()
         
         # try to rename original folder
         try:
@@ -76,11 +76,13 @@ def replaceAll(file,searchExp,replaceExp):
             line = line.replace(searchExp,replaceExp)
         sys.stdout.write(line)
 
+
 # Find all markdown files in all content folders
 all_md_files = [os.path.join(root, name)
                for root, dirs, files in os.walk(path)
                for name in files
                if name.endswith((".md"))]
+
 
 for file in all_md_files:
     with open(file,'r') as f:

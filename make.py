@@ -85,6 +85,7 @@ all_md_files = [os.path.join(root, name)
 
 
 for file in all_md_files:
+    record_files_that_need_change = []
     with open(file,'r') as f:
         filedata = f.read()
         # Find all markdown link syntaxes
@@ -99,4 +100,13 @@ for file in all_md_files:
 
             new_link = "!["+md_image_title+"]("+md_image_filename+")"
 
+            print ()
+            print (link)
+            print (md_image_path)
+            print (md_image_filename)
+
+            record_files_that_need_change.append([file, link, new_link])
+
+    if len(record_files_that_need_change) > 0:
+        for file, link, new_link in record_files_that_need_change:
             replaceAll(file, link, new_link)

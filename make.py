@@ -99,12 +99,6 @@ for file in all_md_files:
             md_image_title = re.search(r'\[(.*?)\]', link).group(1)
 
             new_link = "!["+md_image_title+"]("+md_image_filename+")"
-
-            print ()
-            print (link)
-            print (md_image_path)
-            print (md_image_filename)
-
             record_files_that_need_change.append([file, link, new_link])
 
     if len(record_files_that_need_change) > 0:
